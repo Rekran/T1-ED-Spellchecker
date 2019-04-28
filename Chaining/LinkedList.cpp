@@ -30,6 +30,7 @@ void LinkedList::print(){
 
 void LinkedList::prepend(char *word){
 	if(header.head == NULL){
+		
 		Node *N1 = new Node();
 		N1->word = word;
 		

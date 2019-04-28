@@ -1,5 +1,5 @@
 Número total de palavras do texto:83806
-Tempo total da verificação:422.641ms
+Tempo total da verificação:422.16ms
 Número de palavras que falharam no spell check:47472
 Lista de palavras que falharam no spell check:
 Num. Ocorrencia - Palavra
@@ -47453,3 +47453,26 @@ Num. Ocorrencia - Palavra
 47447 - Conto
 47448 - Machado
 47449 - Lima
+47450 - Filho
+47451 - Paulo
+47452 - Prisco
+47453 - Viana
+47454 - Ralph
+47455 - Biasi
+47456 - Rosário
+47457 - Congro
+47458 - Neto
+47459 - Sérgio
+47460 - Naya
+47461 - Tidei
+47462 - Lima.
+47463 - IN
+47464 - MEMORIAM:
+47465 - Ferreira
+47466 - Antônio
+47467 - Farias
+47468 - Fábio
+47469 - Lucena
+47470 - Schwantes
+47471 - Virgílio
+47472 - Távora.

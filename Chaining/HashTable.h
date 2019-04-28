@@ -15,7 +15,7 @@ class HashTable{
 		unsigned int hash(char *word);
 		void loadDictionary(char *path);
 		
-		void guarda(char *word);
+		void insert(char *word);
 		bool search(char *word);
 		
 		void print();

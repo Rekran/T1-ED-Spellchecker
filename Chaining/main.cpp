@@ -15,19 +15,20 @@ clock_t t0, tf;
 HashTable ht = HashTable();
 ht.loadDictionary("dictionary.txt");
 
-
 t0 = clock();
 
 string word;
   ifstream text("text.txt");
   if (text.is_open())
   {
+    
     while ( text>>word )
     {
       words++;
 
     	if(!ht.search(&word[0]))
 			  erros.push_back(word);
+
     }
     text.close();
   }

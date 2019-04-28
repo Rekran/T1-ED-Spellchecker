@@ -6,7 +6,7 @@ HashTable::HashTable(){
 
 bool HashTable::search(char *word){
 	
-	LinkedList &L = this->table[this->hash(word)];
+	LinkedList &L = this->table[(this->hash(word)) % MAX];
 	
 	Node *aux = L.getHead();
 	
@@ -29,20 +29,25 @@ void HashTable::loadDictionary(char *path){
 
     while ( myfile>>line )
     {
-    	int n = line.length() + 1;
+
+    	int n = line.length() + 1 ;
+
 		char *char_array = new char[n];	
 		strcpy(char_array,&line[0]);
-    	this->guarda(char_array);
+		
+    	this->insert(char_array);
+
     }
+	
     myfile.close();
+	
   }
 	
-}
+};
 
 HashTable::~HashTable(){
 
-	for(int i = 0 ;  i < MAX; i++)
-		this->table[i].~LinkedList();
+
 }
 
 
@@ -56,12 +61,13 @@ unsigned int HashTable::hash(char *word){
 	value += (value << 5)  + word[i];
 	
 	}
-	return value%MAX;
+	return value;
 }
 
 
-void HashTable::guarda(char *word){
-	LinkedList &l = this->table[this->hash(word)];
+void HashTable::insert(char *word){
+	
+	LinkedList &l = this->table[(this->hash(word)) % MAX];
 	l.prepend(word);
 }
 
