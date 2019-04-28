@@ -1,5 +1,5 @@
 Número total de palavras do texto:83806
-Tempo total da verificação:424.637ms
+Tempo total da verificação:422.641ms
 Número de palavras que falharam no spell check:47472
 Lista de palavras que falharam no spell check:
 Num. Ocorrencia - Palavra

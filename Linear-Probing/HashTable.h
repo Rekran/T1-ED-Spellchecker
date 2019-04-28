@@ -6,7 +6,7 @@
 #include"Node.h"
 
 using namespace std;
-#define MAX 400000
+#define MAX 380000
 
 
 class HashTable{

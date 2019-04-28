@@ -22,16 +22,16 @@ bool HashTable::search(char *word){
 }
 
 void HashTable::loadDictionary(char *path){
-string word;
+  string line;
   
   ifstream myfile(path);
-  if (myfile.is_open())
-  {
-    while ( myfile>>word )
+  if (myfile.is_open()){
+
+    while ( myfile>>line )
     {
-    	int n = word.length()+1;
+    	int n = line.length() + 1;
 		char *char_array = new char[n];	
-		strcpy(char_array,word.c_str());
+		strcpy(char_array,&line[0]);
     	this->guarda(char_array);
     }
     myfile.close();
